@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3898097393377156"
+     crossorigin="anonymous"></script>
+     <meta charset="UTF-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="images/mavirenklogo.ico" type="image/x-ico" >
+    <title>Değer ve Referans Tipleri Arasındaki Farklar</title>
+    <link rel="stylesheet" href="styles/Değer ve Referans Tipleri Arasındaki Farklar.css" />
+    </head>
+    
+    <body>
+        <!--! header section start  -->
+    <header class="header">
+        <a href="index.html" class="logo">
+          <img src="images/mavirenklogo.png" alt="logo" />
+        </a>
+        <nav class="navbar">
+          <a href="index.html">Ana Sayfa</a>
+          <a href="hakkımızda.html">Hakkımızda</a>
+          <!--  <a href="menu.html">Menu</a> -->
+          <!--  <a href="products.html">Projeler</a>  -->
+          <!--  <a href="review.html">Review</a> -->
+          <!--  <a href="contact.html">İletişim</a> -->
+          <!--  <a href="blogs.html">Bloglar</a>  -->
+        </nav>
+
+        <div class="buttons">
+            <button id="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+      <!--  <button id="cart-btn">
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+      -->
+            <button id="menu-btn">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+    
+          <div class="search-form">
+            <input
+              type="text"
+              class="search-input"
+              id="search-box"
+              placeholder="Burada ara"
+            />
+            <i class="fas fa-search"></i>
+          </div>
+        </header>
+
+        <!--! home section start  -->
+    <section class="home" id="home">
+        <div class="content">
+          <h3>Değer ve Referans Tipleri Arasındaki Farklar</h3>
+          <p>Selam millet, bugün sizlerle birlikte değer ve referans tipleri arasındaki farkı inceleyeceğiz. Bu makalemde java dili üzerinden örnekler verirken, değer ve referans tiplerinin C#, C++ vb. gibi tüm dillerde aynı mantıkla çalıştığını belirtmek isterim.</p>
+          <p>Nesne yönelimli programlama dillerinde, genel olarak, her sınıf bir veri tipidir, her veri tipi bir sınıftır. Java bu genel kurala uyar. Java dilinde veri tiplerini üç ana gruba ayırabiliriz.</p>
+          <p><b>1.İlkel (Değer) Veri Tipleri</b></p>
+          <p><b>2.Referans Tipleri</b></p>
+          <p><b>3.Null Veri Tipi</b></p>
+          <img src="images/javareferans1.png"/>
+          <p>İlk olarak kısa bir tanım yapalım</p>
+          <p><b>Değer Tipi :</b> Değer tipi, doğrudan bellekte oluşturulan tiptir. Her örnek, verilerin benzersiz bir kopyasını tutar. Atadığınızda veya kopyaladığınızda, tamamen yeni bir veri oluşturur.</p>
+          <p><b>Referans Tipi :</b> Tek bir veriyi paylaşan bir tip. Bir kez başlatıldığında ve bir değişkene veya kişiye veya bir işleve atandığında, bir referans döndürür.</p>
+          <p>Değer Tipi değişkenleri RAM’in <b>Stack</b> adı verilen bölgesinde saklanırken, Referans Tipleri <b>Stack</b> ve <b>Heap</b> bellek alanlarını birlikte kullanılır.</p>
+          <img src="images/javareferans2.png"/>
+          <h2><b>Stack (yığın) ve Heap (öbek) Bölgeleri</b></h2>
+          <p>Programlarda kullandığımız veri yapıları değişken ya da nesne olarak bilgisayarın belleğine (RAM) yazılır. Bellek üzerinde stack ve heap olmak üzere farklı davranan bellek alanları vardır. İleride bahsedeceğimiz üzere; Stack alanı değer tipi verileri saklar ve programın derlenmesi sırasında rezerve edilir. Stack alanında veriler LIFO prensibine göre sıralı olarak yazılır. Bu sayede buraya erişim çok hızlıdır.</p>
+          <p>Heap alanı için derleme sırasında herhangi bir rezerve yapılmaz, veriler programın çalışması sırasında dinamik olarak kaydedilir. Heap alanında veriler dağınık halde olduklarından hız daha düşüktür. Yine birazdan değineceğimiz üzere bu bölgeye referans tipi değerler yazılır</p>
+          <img src="images/javareferans3.png"/>
+          <img src="images/javareferans4.png"/>
+          <p>Bu iki farklı <b>mantıksal</b> alanın birbirlerinden ayrılma nedeni ise değer tipi değişkenlerin ve referans tipi nesnelerin bu bellek bölgelerini farklı şekilde kullanmalarıdır. Farklılıklarını anlamak için <b>değer Tipi (Value Type)</b> ve <b>Referans Tipi (Reference Type)</b> kavramlarını örneklerle inceleyelim.</p>
+          <h2><b>DEĞER VERİ TİPİ</b></h2>
+          <p>Değer Tipi, içeriğini Stack bölümünden ayrılan bellekte saklar. r. Bunlar programlama dillerinde ilkel (primitif) değişken tipi olarak adlandırılan tiplerdir.</p>
+          <p>Bir Değer Türü oluşturduğunuzda, değeri depolamak için bellekte tek bir alan ayrılır ve bu değişken doğrudan bir değer tutar. Başka bir değişkene atarsanız, değer doğrudan kopyalanır ve her iki değişken de bağımsız çalışır.</p>
+          <p>Önceden tanımlanmış veri türleri, yapılar, numaralandırmalar da değer türleridir ve aynı şekilde çalışır. Derleme zamanında değer türleri oluşturulabilir ve yığın belleğinde saklanabilir, bu nedenle Çöp toplayıcı yığına erişemez.</p>
+          <p>Değer tipi örnekleri, byte, short, int, long, float, double, char, boolean vb.’dir.</p>
+          <img src="images/javareferans5.png"/>
+          <img src="images/javareferans6.png"/>
+          <h2><b>REFERANS VERİ TİPİ</b></h2>
+          <p>Değer türlerinden farklı olarak, bir başvuru türü, değerini doğrudan saklamaz. Bunun yerine, değerin saklandığı adresi saklar. Başka bir deyişle, bir referans türü, verileri tutan başka bir bellek konumuna işaretçi içerir.</p>
+          <p>Referans türleri, verinin kendisinden ziyade değişkenin adresini temsil ettiğinden, bir referans değişkeni diğerine atamak verileri kopyalamaz. Bunun yerine, orijinal değerle yığının aynı konumuna atıfta bulunan referansın ikinci bir kopyasını oluşturur.</p>
+          <p>Referans Türü değişkenleri, heap adı verilen farklı bir bellek alanında saklanır. Bu, bir referans tipi değişkeni artık kullanılmadığında çöp toplama için işaretlenebileceği anlamına gelir.</p>
+          <p>Referans türlerinin örnekleri, Sınıflar, Nesneler, Diziler, Arayüzler(Interfaces) vb.’dir.</p>
+          <p><i><b>! String bir referans veri türüdür, ancak stringler temelde ilkel değişken tipi olduğu için kullanım esnasında değer tipi gibi davranırlar.. Bu, bir değer atadığımızda değiştirilemeyeceği anlamına gelir.</b></i></p>
+          <img src="images/javareferans7.png"/>
+          <img src="images/javareferans8.png"/>
+          <p><b>Asıl Fark :</b></p>
+          <p><b>Değer tipi ile referans tipi arasındaki temel fark, değer tipinin bir veriyi kopyalaması, referans tiplerinin ise verilerinin tek bir kopyasını paylaşmasıdır. Değer Türü değişmez bunun anlamı, bir değer türüne sahip bir örnek oluşturduğumuzda, verilerin benzersiz bir kopyasını oluşturur ve değiştirilemez ancak referans türü değişkendir, değeri değiştirilebilir.</b></p>
+          <!--  <a href="#" class="btn">Order Now</a>-->
+        </div>
+      </section>
+      <!--! home section end  -->
+
+
+
+
+
+
+
+      <!--! footer section start  -->
+    <section class="footer">
+        <div class="search">
+          <input type="text" class="search-input" placeholder="Ara" />
+          <button class="btn btn-primary">ara</button>
+        </div>
+        <div class="share">
+          <!--  <a href="https://www.twitch.tv/rrayiha" class="fab fa-twitch"></a>  -->
+          <!--  <a href="https://www.youtube.com/channel/UC71T-7HosztbtWuHt6OOoYA/?sub_confirmation=1" class="fab fa-youtube"></a>  -->
+          <a href="https://www.instagram.com/rayihadev/" class="fab fa-instagram"></a>
+          <a href="https://twitter.com/rayihadev" class="fab fa-twitter"></a>
+          <!--  <a href="https://open.spotify.com/user/qrw8ze2w7wl2avpygln2iiq8o" class="fab fa-spotify"></a> -->
+          <a href="https://www.linkedin.com/in/ismet-say%C4%B1n-19b248233/" class="fab fa-linkedin"></a>
+          <a href="https://github.com/rRayiha" class="fab fa-github"></a>
+          <!--  <a href="https://discord.gg/2XkwQv5CvD" class="fab fa-discord"></a> -->
+        </div>
+  
+        <div class="links">
+          <!--  <a href="index.html" class="active">Ana Sayfa</a> -->
+          <!--  <a href="about.html">Hakkımızda</a> -->
+          <!--  <a href="#">Menu</a>  -->
+          <!--  <a href="products.html">Projeler</a>  -->
+          <!--  <a href="#">Review</a>  -->
+          <!--  <a href="#">İletişim</a>  -->
+          <!--  <a href="#">Bloglar</a> -->
+        </div>
+  
+        <div class="credit">
+          created by <span>İsmet SAYIN</span> | Tüm Hakları Saklıdır © 2022
+        </div>
+      </section>
+      <!--! footer section end  -->
+  
+      <script src="js/script.js"></script>
+    </body>
+
+</html>

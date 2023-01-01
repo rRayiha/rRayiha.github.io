@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3898097393377156"
+     crossorigin="anonymous"></script>
+     <meta charset="UTF-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="images/mavirenklogo.ico" type="image/x-ico" >
+    <title>JAVA INTERFACE</title>
+    <link rel="stylesheet" href="styles/javainterface.css" />
+    </head>
+    
+    <body>
+        <!--! header section start  -->
+    <header class="header">
+        <a href="index.html" class="logo">
+          <img src="images/mavirenklogo.png" alt="logo" />
+        </a>
+        <nav class="navbar">
+          <a href="index.html">Ana Sayfa</a>
+          <a href="hakkımızda.html">Hakkımızda</a>
+          <!--  <a href="menu.html">Menu</a> -->
+          <!--  <a href="products.html">Projeler</a>  -->
+          <!--  <a href="review.html">Review</a> -->
+          <!--  <a href="contact.html">İletişim</a> -->
+          <!--  <a href="blogs.html">Bloglar</a>  -->
+        </nav>
+
+        <div class="buttons">
+            <button id="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+      <!--  <button id="cart-btn">
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+      -->
+            <button id="menu-btn">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+    
+          <div class="search-form">
+            <input
+              type="text"
+              class="search-input"
+              id="search-box"
+              placeholder="Burada ara"
+            />
+            <i class="fas fa-search"></i>
+          </div>
+        </header>
+
+        <!--! home section start  -->
+    <section class="home" id="home">
+        <div class="content">
+          <h3>JAVA'DA INTERFACE</h3>
+          <p>Interfaceler yapısal olarak classlara benzemektedir fakat javada tanımlanan her metot alt sınıflarında override edilmelidir. Interface’i alt sınıfların annesi olarak kabul edersek alt sınıfları da çocukları olarak kabul edebiliriz. İnterface’de içi boş metotlar tanımlanmaktadır ve alt sınıflarda bu metotlar tanımlanıp override edilmelidir.</p>
+          <img src="images/javainterface1.png"/>
+          <p><i>Öncelikle kişi tanıtımı için bir interface oluşturduk ve kullanılacak metotları içi boş şekilde ekledik.</i></p>
+          <img src="images/javainterface2.png"/>
+          <p><i>Daha sonra ilk alt sınıfımızı oluşturduk ve interface’de verilen metotların değerlerini burada tanımladık.</i></p>
+          <img src="images/javainterface3.png"/>
+          <p><i>ikinci alt sınıfı da oluşturup değerlerini tanımladık.</i></p>
+          <img src="images/javainterface4.png"/>
+          <p><i>Main’ e gelerek classsları çağırdık.</i></p>
+          <img src="images/javainterface5.png"/>
+          <p><i>Çıktı şekilde gözüktüğü gibi.</i></p>
+          <p>Yukarıdaki örnekte de gördüğümüz üzere; implements , class interface’i çağırırken kullanılır.Ayrıca interface’de tanımlanan tüm metotları class’ta overrride ettik. Bi class’ta interface’ deki tüm metotlar olmalıdır ancak o classa ait ekstra metotlar eklenebilir.Örnekte 2 class da aynı interface’i kullandı. İnterface’ler bir veya daha fazla class tarafından implement edilebilir.</p>
+          <p><b>Ek olarak:</b></p>
+          <p><b>— Bir class birden fazla implement içerebilir.</b></p>
+          <p><b>— Tanımlamalarda sadece <i>public</i> ve <i>default</i> kullanılabilir.</b></p>
+          <p><b>— İnterface kullanılarak nesne üretilmez.</b></p>
+          <p><b>— Kodun okunurluğunu artırmak için interface isimlerinin başına I eklenmesi sıklıkla kullanılan bir yöntemdir.</b></p>
+          <!--  <a href="#" class="btn">Order Now</a>-->
+        </div>
+      </section>
+      <!--! home section end  -->
+
+
+
+
+
+
+
+      <!--! footer section start  -->
+    <section class="footer">
+        <div class="search">
+          <input type="text" class="search-input" placeholder="Ara" />
+          <button class="btn btn-primary">ara</button>
+        </div>
+        <div class="share">
+          <!--  <a href="https://www.twitch.tv/rrayiha" class="fab fa-twitch"></a>  -->
+          <!--  <a href="https://www.youtube.com/channel/UC71T-7HosztbtWuHt6OOoYA/?sub_confirmation=1" class="fab fa-youtube"></a>  -->
+          <a href="https://www.instagram.com/rayihadev/" class="fab fa-instagram"></a>
+          <a href="https://twitter.com/rayihadev" class="fab fa-twitter"></a>
+          <!--  <a href="https://open.spotify.com/user/qrw8ze2w7wl2avpygln2iiq8o" class="fab fa-spotify"></a> -->
+          <a href="https://www.linkedin.com/in/ismet-say%C4%B1n-19b248233/" class="fab fa-linkedin"></a>
+          <a href="https://github.com/rRayiha" class="fab fa-github"></a>
+          <!--  <a href="https://discord.gg/2XkwQv5CvD" class="fab fa-discord"></a> -->
+        </div>
+  
+        <div class="links">
+          <!--  <a href="index.html" class="active">Ana Sayfa</a> -->
+          <!--  <a href="about.html">Hakkımızda</a> -->
+          <!--  <a href="#">Menu</a>  -->
+          <!--  <a href="products.html">Projeler</a>  -->
+          <!--  <a href="#">Review</a>  -->
+          <!--  <a href="#">İletişim</a>  -->
+          <!--  <a href="#">Bloglar</a> -->
+        </div>
+  
+        <div class="credit">
+          created by <span>İsmet SAYIN</span> | Tüm Hakları Saklıdır © 2022
+        </div>
+      </section>
+      <!--! footer section end  -->
+  
+      <script src="js/script.js"></script>
+    </body>
+
+</html>

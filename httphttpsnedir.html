@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3898097393377156"
+     crossorigin="anonymous"></script>
+     <meta charset="UTF-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="images/mavirenklogo.ico" type="image/x-ico" >
+    <title>HTTP VE HTTPS NEDİR?</title>
+    <link rel="stylesheet" href="styles/restnedir.css" />
+    </head>
+    
+    <body>
+        <!--! header section start  -->
+    <header class="header">
+        <a href="index.html" class="logo">
+          <img src="images/mavirenklogo.png" alt="logo" />
+        </a>
+        <nav class="navbar">
+          <a href="index.html">Ana Sayfa</a>
+          <a href="hakkımızda.html">Hakkımızda</a>
+          <!--  <a href="menu.html">Menu</a> -->
+          <!--  <a href="products.html">Projeler</a>  -->
+          <!--  <a href="review.html">Review</a> -->
+          <!--  <a href="contact.html">İletişim</a> -->
+          <!--  <a href="blogs.html">Bloglar</a>  -->
+        </nav>
+
+        <div class="buttons">
+            <button id="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+      <!--  <button id="cart-btn">
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+      -->
+            <button id="menu-btn">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+    
+          <div class="search-form">
+            <input
+              type="text"
+              class="search-input"
+              id="search-box"
+              placeholder="Burada ara"
+            />
+            <i class="fas fa-search"></i>
+          </div>
+        </header>
+
+        <!--! home section start  -->
+    <section class="home" id="home">
+        <div class="content">
+          <h3>HTTP Nedir?</h3>
+          <p><b>HTTP (Hyper Text Transfer Protocol) Köprü metin aktarım protokolü</b> anlamına gelir. HTTP internetteki web sayfalarını görüntülemek için kullanılan protokoldür. Tarayıcının adres çubuğundaki bir URL’den önce gelir, çünkü HTTP, istemci ile web sunucusu arasındaki iletişim için kullanılan genel protokol standardıdır. Bu protokol, istemci tarafında web sunucusu verilerinin doğru görüntülenmesi için temel gereksinimdir. Bu protocol bir web sunucusu ile bir web tarayıcısı arasında veri göndermenin güvenli bir yoludur.</p>
+          <img src="images/http1.png"/>
+          <h3>HTTPS Nedir?</h3>
+          <p>HTTP ile metinler açık metin olarak aktarıldığı için bilgisayar korsanları, hacker gibi kişilere karşı savunmasızdır. Ancak telefon numaranız, adresiniz ve kredi kartı bilgileriniz gibi hassas verilerinizin bu şekilde gönderimi bir güvenlik zafiyeti oluşturuyordu. Bu yüzden uzmanlar <b>HTTPS</b>’yi geliştirdi.</p>
+          <p><b>HTTP + S (Secure/Güvenli) = HTTPS (Hyper Text Transform Protocol Secure)</b>  Güvenli Köprü Metin Aktarım Protokolü anlamına gelir. Yani bu bir güvenlik önlemine sahip HTTP’dir. Ve Güvenli HTTP, HTTP’den alınan verileri şifreler. Bilgisayarlar ve sunucular arasında internet üzerinden transfer olan tüm verilerin okunmasını imkansız hale getirerek güvenli olmasını sağlar. Ve bunu da, aktarılan verileri karıştırmak için şifreleme algoritmaları kullanarak yapar.</p>
+          <h2>HTTP Metotları</h2>
+          <p>HTTP sunucuya yapılacak olan isteğin tipini belirlemek için sekiz farklı method kullanır (HTTP Methods). Bu metotlara aynı zamanda HTTP Fiilleri de denir (HTTP Verbs).</p>
+          <p><i>Genel Metotlar aşağıdaki gibidir.</i></p>
+          <p><b>Get :</b>Sunucuda halihazırda bulunan bir kaynağa erişim için kullanılır.</p>
+          <p><b>Post :</b>Sunucu üzerinde yeni bir kaynak oluşturmak için kullanılır. Post istekleri genellikle yeni oluşturulacak kaynağa ait bilgiyi de taşırlar.</p>
+          <p><b>Put :</b>Sunucudaki bir kaynağı güncellemek için kullanılır. Bu istekler de genellikle üzerilerinde değiştirilmek istenen bilgiyi taşırlar.</p>
+          <p><b>Patch :</b>Bu metot da sunucudaki bir kaynağı değiştirmek için kullanılır. Put ile arasındaki fark ise Put sunucudaki kaynağı yeni bir kaynak ile değiştirmek için kullanılır iken, Patch bu kaynağında bir kısmını değiştirmeye yarar.</p>
+          <p><b>Delete :</b>Sunucudaki bir kaynağı silmeye yarar.</p>
+          <p><i>Daha az kullanılan metotlar ise aşağıdaki gibidir:</i></p>
+          <p><b>Connect :</b>Sunucu ile bir bağlantı oluşturma isteği gönderir. Sunucu bağlantılarını minimum yük ile test etme olanağı sağlar.</p>
+          <p><b>Head :</b>Sunucuya aynı Get metodu gibi ancak sadece başlığı olan (Request Header), gövdesi olmayan(Request Body) bir istek gönderir. Genellikle sunucuda bir kaynak mevcut mu veya kaynağın en son güncellenme bilgisi için kullanılır.</p>
+          <p><b>Options :</b>Sunucunun desteklediği metotları kontrol etmek için kullanılır.</p>
+          <p><b>Trace :</b>Bu metod ile bir sunucuya istek gönderdiğinizde, aradaki tüm vekil sunucular (Proxy, Gateway) isteğin başlığına kendi IP veya DNS biglilerini eklerler. Genellikle hata ayıklama/bakım işleri için kullanılır.</p>
+          <h2>HTTP Durum Kodları</h2>
+          <p>İstemci bir sunucu içeriğine HTTP kullanarak ulaşmaya çalıştığında sunucu yanıtın durumunu belirten bir sayısal kod gönderir. Bazı durumlarda HTTP durum kodu (HTTP Status Code) istemcinin tarayıcısında da gösterilebilir Örn; 200, 301, 302, 404 ve 500 kodları en yaygın olanlardır. Durum kodlarında 1’den 5’e kadar gruplandırılmıştır.</p>
+          <p><b>-</b>1xx Bilgi</p>
+          <p><b>-</b>2xx Başarı</p>
+          <p><b>-</b>3xx Yönlendirme</p>
+          <p><b>-</b>4xx Tarayıcı Hatası</p>
+          <p><b>-</b>5xx Sunucu Hatası</p>
+          
+          <!--  <a href="#" class="btn">Order Now</a>-->
+        </div>
+      </section>
+      <!--! home section end  -->
+
+
+
+
+
+
+
+      <!--! footer section start  -->
+    <section class="footer">
+        <div class="search">
+          <input type="text" class="search-input" placeholder="Ara" />
+          <button class="btn btn-primary">ara</button>
+        </div>
+        <div class="share">
+          <!--  <a href="https://www.twitch.tv/rrayiha" class="fab fa-twitch"></a>  -->
+          <!--  <a href="https://www.youtube.com/channel/UC71T-7HosztbtWuHt6OOoYA/?sub_confirmation=1" class="fab fa-youtube"></a>  -->
+          <a href="https://www.instagram.com/rayihadev/" class="fab fa-instagram"></a>
+          <a href="https://twitter.com/rayihadev" class="fab fa-twitter"></a>
+          <!--  <a href="https://open.spotify.com/user/qrw8ze2w7wl2avpygln2iiq8o" class="fab fa-spotify"></a> -->
+          <a href="https://www.linkedin.com/in/ismet-say%C4%B1n-19b248233/" class="fab fa-linkedin"></a>
+          <a href="https://github.com/rRayiha" class="fab fa-github"></a>
+          <!--  <a href="https://discord.gg/2XkwQv5CvD" class="fab fa-discord"></a> -->
+        </div>
+  
+        <div class="links">
+          <!--  <a href="index.html" class="active">Ana Sayfa</a> -->
+          <!--  <a href="about.html">Hakkımızda</a> -->
+          <!--  <a href="#">Menu</a>  -->
+          <!--  <a href="products.html">Projeler</a>  -->
+          <!--  <a href="#">Review</a>  -->
+          <!--  <a href="#">İletişim</a>  -->
+          <!--  <a href="#">Bloglar</a> -->
+        </div>
+  
+        <div class="credit">
+          created by <span>İsmet SAYIN</span> | Tüm Hakları Saklıdır © 2022
+        </div>
+      </section>
+      <!--! footer section end  -->
+  
+      <script src="js/script.js"></script>
+    </body>
+
+</html>
